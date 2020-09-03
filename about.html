@@ -4,6 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="top-bar" style="margin-left: 10rem; margin-right: 10rem">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">
+            <img
+              src="https://get.foundation/sites/docs/assets/img/icons/foundation-favicon.ico"
+              alt="logo"
+              style="width: 2rem"
+            />
+          </li>
+
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div style="margin-left: 10rem; margin-right: 10rem; margin-top: 2rem">
+          <h2>About me</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-center-middle text-center">
+        <div style="margin-left: 10rem; margin-right: 10rem; margin-top: 10rem">
+          <h4>Check out this button!</h4>
+          <p>
+            <button class="button" data-toggle="animatedModal10">Go!</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="reveal"
+      id="animatedModal10"
+      data-reveal
+      data-close-on-click="true"
+      data-animation-in="spin-in"
+      data-animation-out="spin-out"
+    >
+      <h5>Dogs!</h5>
+      <hr />
+      <p>
+        <b> Cute stuff to highlight here, like these dogs! </b>
+      </p>
+      <img
+        src="https://scontent.faar2-1.fna.fbcdn.net/v/t1.0-9/p720x720/117108155_10220447338945989_3916157676922996541_o.jpg?_nc_cat=104&_nc_sid=e3f864&_nc_ohc=UqGxvXmZcNIAX_v5Fu-&_nc_ht=scontent.faar2-1.fna&tp=6&oh=ae2c54ca3dfb8a1297b6b488fd1935a1&oe=5F76FEDF"
+        alt="dogs"
+        style="width: 50%"
+      />
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close reveal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <footer
+      class="text-center"
+      style="
+        background-color: #f2f2f2;
+        padding: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 2rem;
+        margin-top: 14rem;
+      "
+    >
+      <h5>Made by Thomas Christensen</h5>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(document).foundation();
+      });
+    </script>
+  </body>
 </html>
