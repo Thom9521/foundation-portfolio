@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-center-middle text-center">
+        <div
+          class="cell"
+          style="
+            margin-left: 10rem;
+            margin-right: 10rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+          "
+        >
+          <div
+            class="callout secondary"
+            style="padding-top: 5rem; padding-bottom: 5rem"
+          >
+            <h1>Foundation Portfolio</h1>
+            <p>Welcome to my foundation portfolio made with foundation!</p>
+          </div>
+          <!--Buttons-->
+          <!-- <a class="button primary" href="#">Primary</a>
+          <a class="button secondary" href="#">Secondary</a>
+          <a class="button success" href="#">Success</a>
+          <a class="button alert" href="#">Alert</a>
+          <a class="button warning" href="#">Warning</a>
+
+          <a class="button tiny" href="#">So Tiny</a>
+          <a class="button small" href="#">So Small</a>
+          <a class="button" href="#">So Basic</a>
+          <a class="button large" href="#">So Large</a>
+          <a class="button expanded" href="#">Such Expand</a>
+          <a class="button small expanded" href="#">Wow, Small Expand</a> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="grid-container">
+      <div class="grid-x grid-padding-x align-center-middle text-center"> -->
+    <!--Tooltip-->
+    <!-- <div class="cell">
+          The
+          <span
+            data-tooltip
+            aria-haspopup="true"
+            class="has-tip"
+            data-disable-hover="false"
+            tabindex="1"
+            title="Fancy word for a beetle."
+            >scarabaeus</span
+          >
+          hung quite clear of any branches, and, if allowed to fall, would have
+          fallen at our feet.
+        </div>
+      </div>
+    </div> -->
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-center-middle text-center">
+        <!--Orbit-->
+        <div class="cell" style="margin-left: 10rem; margin-right: 10rem">
+          <div
+            class="orbit"
+            role="region"
+            aria-label="Favorite Space Pictures"
+            data-orbit
+          >
+            <div class="orbit-wrapper">
+              <div class="orbit-controls">
+                <button class="orbit-previous">
+                  <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+                </button>
+                <button class="orbit-next">
+                  <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
+                </button>
+              </div>
+              <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                  <a
+                    class="button secondary"
+                    href="https://www.techthomas.dk"
+                    target="_blank"
+                    >Check it out</a
+                  >
+                  <br />
+                  <h4>
+                    <b>Techthomas.dk</b>
+                  </h4>
+
+                  <figure class="orbit-figure">
+                    <img
+                      class="orbit-image"
+                      src="https://github.com/Thom9521/bootstrap-portfolio/blob/master/bootstrap-portfolio2/images/techthomas.png?raw=true"
+                      alt="Space"
+                    />
+                    <!-- <figcaption class="orbit-caption">Techthomas.dk</figcaption> -->
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <a
+                    class="button secondary"
+                    href="https://www.Traekunst.dk"
+                    target="_blank"
+                    >Check it out</a
+                  >
+                  <br />
+                  <h4>
+                    <b>Traekunst.dk</b>
+                  </h4>
+                  <figure class="orbit-figure">
+                    <img
+                      class="orbit-image"
+                      src="https://github.com/Thom9521/bootstrap-portfolio/blob/master/bootstrap-portfolio2/images/traekunst.png?raw=true"
+                      alt="Space"
+                    />
+                    <!-- <figcaption class="orbit-caption">Traekunst.dk</figcaption> -->
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <a
+                    class="button secondary"
+                    href="https://www.techthomas.dk/hypeball"
+                    target="_blank"
+                    >Check it out</a
+                  >
+                  <br />
+                  <h4>
+                    <b>Hypeball</b>
+                  </h4>
+                  <figure class="orbit-figure">
+                    <img
+                      class="orbit-image"
+                      src="https://github.com/Thom9521/bootstrap-portfolio/blob/master/bootstrap-portfolio2/images/hypeball.png?raw=true"
+                      alt="Space"
+                    />
+                    <!-- <figcaption class="orbit-caption">Hypeball</figcaption> -->
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0">
+                <span class="show-for-sr">First slide details.</span>
+                <span class="show-for-sr" data-slide-active-label
+                  >Current Slide</span
+                >
+              </button>
+              <button data-slide="1">
+                <span class="show-for-sr">Second slide details.</span>
+              </button>
+              <button data-slide="2">
+                <span class="show-for-sr">Third slide details.</span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="text-center"
+      style="
+        background-color: #f2f2f2;
+        padding: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 2rem;
+      "
+    >
+      <h5>Made by Thomas Christensen</h5>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $(document).foundation();
+      });
+    </script>
+  </body>
+</html>
